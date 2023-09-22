@@ -17,5 +17,8 @@
 // let newValue = String(value);
 // console.log (typeof (newValue));
 
-// let abc = ["meghla", "Rodela", "falguni", "hemonti", "Hemontika"];
-// console.log(abc[4] + " ami jedin tumay dekhechilam mone korechilam ei duniyay hoyto tumi ekai meye jake amr chokh sorte dichilo na ami jeno kono ek soktite atke giyechilam"); 
+let abc = ["meghla", "Rodela", "falguni", "hemonti", "Hemontika"];
+
+// console.log(abc[4] +" "+"ami bakruddho tumar dike cheye" +  " "+abc[5]); abc[5] number take khuje painai 
+abc.push("tumi amr gf hoba"); 
+console.log(abc[4] + "tomar jonno kichu kotha " + abc[5])
