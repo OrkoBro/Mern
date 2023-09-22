@@ -30,3 +30,5 @@ p.pop();
 console.log(p)
 p.shift(2);
 console.log(p);
+console.log(p.indexOf(5));
+console.log(Array.isArray(p));
