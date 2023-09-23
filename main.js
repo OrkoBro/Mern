@@ -66,3 +66,59 @@
 // let p = a++ +5 ;
 // console.log(p);
 // console.log(a);
+
+
+// let p =  true ;
+// let c = p && true ;
+// console.log (c);
+
+// let a = true ;
+// let b = false ;
+// let c = true ;
+// let d = true;
+
+// console.log(a || b ||c || d); 
+
+// console.log(!!undefined); // false 
+// console.log(!!null); // 
+// console.log(!!20); //f
+// console.log(!!0); //
+// console.log(!!NaN); //
+// console.log(!!{}); // f
+// console.log(!!''); //
+// console.log(!!'OK'); //f
+// console.log(!!false); //
+// console.log(!!true); //f
+
+
+// ======only work when the veriable is true ====================== logical && assignment oparetor start ==============
+// let p = {
+//     name:"javascript"
+// }
+// console.log(p)   
+// console.log(Boolean(p));
+
+// p &&= "hello bro you was true";
+// console.log(p)
+// ======================= logical && assignment opparetro end ========
+
+
+// ========== only works null and undifind===== ogical ??= assignment opparetro start ========
+let obj ={
+    name:"Md Ariful islam"
+}
+obj.nickName??= "Orko";
+
+console.log(obj);
+
+
+let box = null ?? 20;
+console.log(box);
+
+let bc = 10**10;
+console.log(bc);
+
+
+let bd = 10;
+    bd**= 10;
+console.log(bd);
