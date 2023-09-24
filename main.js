@@ -104,21 +104,88 @@
 
 
 // ========== only works null and undifind===== ogical ??= assignment opparetro start ========
-let obj ={
-    name:"Md Ariful islam"
+// 
+
+
+
+
+
+
+
+
+
+// switch statement ==============start =================
+// let year = 2016;
+// let month = 2;
+// let dayCount;
+
+// switch (2) {
+//   case 1:
+//   case 3:
+//   case 5:
+//   case 7:
+//   case 8:
+//   case 10:
+//   case 12:
+//     dayCount = 31; // 
+//     console.log(dayCount);
+//     break;
+//   case 4:
+//   case 6:
+//   case 9:
+//   case 11:
+//     dayCount = 30;
+//     console.log(dayCount);
+//     break;
+//   case 2:
+//     // leap year
+//     if ((year % 4 == 0 && !(year % 100 == 0)) || year % 400 == 0) {
+//       dayCount = 29;
+//       console.log(dayCount);
+//     } else {
+//       dayCount = 28;
+//       console.log(dayCount);
+//     }
+//     break;
+//   default:
+//     dayCount = -1; // invalid month
+//     console.log(dayCount);
+// }
+// console.log(dayCount)
+
+
+let c = 2 + 2 + 2+1;
+
+switch(c){
+    case 2:
+        console.log("hi orko i am here to litsen you");
+        break;
+    case 5:
+        console.log("brother i am listening you 2nd time");
+        break;
+    case 6:
+        c = "Md. Ariful Islam";
+        console.log(`${c} has been writen useing case 6 `);
+        break;
+    case 7:
+        if (5>4 &&2<5){
+        c = "Orko";
+        console.log(`${c} is new coming pogramar `);
+        }else{
+            console.log("i am over here brother");
+        }
+        break;
+    default:
+        console.log("i didn't get any value");
 }
-obj.nickName??= "Orko";
-
-console.log(obj);
 
 
-let box = null ?? 20;
-console.log(box);
-
-let bc = 10**10;
-console.log(bc);
 
 
-let bd = 10;
-    bd**= 10;
-console.log(bd);
+
+
+
+// switch statement ============ end =====================
+
+
+
