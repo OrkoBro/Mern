@@ -154,59 +154,95 @@
 // console.log(dayCount)
 
 
-let c = 2 + 2 + 2+1;
+// let c = 2 + 2 + 2+1;
 
-switch(c){
-    case 2:
-        console.log("hi orko i am here to litsen you");
-        break;
-    case 5:
-        console.log("brother i am listening you 2nd time");
-        break;
-    case 6:
-        c = "Md. Ariful Islam";
-        console.log(`${c} has been writen useing case 6 `);
-        break;
-    case 7:
-        if (5>4 &&2<5){
-        c = "Orko";
-        console.log(`${c} is new coming pogramar `);
-        }else{
-            console.log("i am over here brother");
-        }
-        break;
-    default:
-        console.log("i didn't get any value");
-}
-
-
+// switch(c){
+//     case 2:
+//         console.log("hi orko i am here to litsen you");
+//         break;
+//     case 5:
+//         console.log("brother i am listening you 2nd time");
+//         break;
+//     case 6:
+//         c = "Md. Ariful Islam";
+//         console.log(`${c} has been writen useing case 6 `);
+//         break;
+//     case 7:
+//         if (5>4 &&2<5){
+//         c = "Orko";
+//         console.log(`${c} is new coming pogramar `);
+//         }else{
+//             console.log("i am over here brother");
+//         }
+//         break;
+//     default:
+//         console.log("i didn't get any value");
+// }
 
 
 
 
 
-// switch statement ============ end =====================
+
+
+// // switch statement ============ end =====================
 
 
 
-// condition ==================  while start ===============
-let x = 1; // innitializetion 
-while (x <=10){
-    console.log(`hello ${x}`);
-    x++; // increment 
-}
-// ======================= while loop end ================
-// ======================= do ---while loop start ================
-let xx = 1;
-do{
-    console.log(`${xx} orko vai`);
-    xx++
-}while(xx<=10);
-// ======================= do ---while loop end ================
-// ======================= for loop start ================
-for(let p5 = 1; p5 <=15; p5++){
-    console.log(`${p5} brother i am here`);
-}
+// // condition ==================  while start ===============
+// let x = 1; // innitializetion 
+// while (x <=10){
+//     console.log(`hello ${x}`);
+//     x++; // increment 
+// }
+// // ======================= while loop end ================
+// // ======================= do ---while loop start ================
+// let xx = 1;
+// do{
+//     console.log(`${xx} orko vai`);
+//     xx++
+// }while(xx<=10);
+// // ======================= do ---while loop end ================
+// // ======================= for loop start ================
+// for(let p5 = 1; p5 <=15; p5++){
+//     console.log(`${p5} brother i am here`);
+// }
 
-// ======================= for loop end ================
+// // ======================= for loop end ================
 
+
+
+// ==break start ======================
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//     if (i == 2) {
+//       break;
+//     }
+//   }
+
+//   for (let p = 1; p <= 3; p++) {
+
+
+//     for (let j = 0; j <= 3; j++) {
+//       console.log(p, j);
+//       if (j==2){ // out off the loop only for child not for parent 
+//         break;
+//       }
+//     }
+// }
+// break end ========================
+
+// continue start ===========================
+for (let p1 = 1; p1 <= 3; p1++) {
+
+//if()
+  for (let j1 = 1; j1 <= 5; j1++) {    
+       if (j1==5){ // out off the loop only for child not for parent 
+      continue;
+    }
+    console.log(p1, j1);
+
+
+  }} 
+  // continue end ================================
+  
