@@ -189,3 +189,24 @@ switch(c){
 
 
 
+// condition ==================  while start ===============
+let x = 1; // innitializetion 
+while (x <=10){
+    console.log(`hello ${x}`);
+    x++; // increment 
+}
+// ======================= while loop end ================
+// ======================= do ---while loop start ================
+let xx = 1;
+do{
+    console.log(`${xx} orko vai`);
+    xx++
+}while(xx<=10);
+// ======================= do ---while loop end ================
+// ======================= for loop start ================
+for(let p5 = 1; p5 <=15; p5++){
+    console.log(`${p5} brother i am here`);
+}
+
+// ======================= for loop end ================
+
