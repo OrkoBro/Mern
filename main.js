@@ -271,8 +271,47 @@
 
 
 //default value for parameter ============start=============
-function myFun(firstName ="you did not pass your First Name"){
-      console.log(firstName)
-}
-myFun();
+// function myFun(firstName ="you did not pass your First Name"){
+//       console.log(firstName)
+// }
+// myFun();
 //default value for parameter ============end=============
+
+
+// three ways to make define function inside an object 
+// when you creat a function inside an object then that function is called method of thet object 
+
+let person1 = {
+      firstname:"mohammod",
+      fullName:"Mohammod Ariufl Islam",
+      nickName:"orko",
+      great(){
+        alert(this.firstname +" "+ this.fullName + " "+ this.nickName);
+      }
+}
+person1.great();
+
+
+let person2 ={
+  firstname:"mohammod",
+  fullName:"Mohammod Ariufl Islam",
+  nickName:"orko",
+  great2:   function(){
+        alert("this is secound method of an object");
+      }
+}
+
+person2.great2();
+
+
+let person3 ={
+  firstname:"mohammod",
+  fullName:"Mohammod Ariufl Islam",
+  nickName:"orko",
+}
+person3.great3 = function(){
+    alert("this is 3rd method of an object");
+}
+person3.great3();
+
+//end ==============================================
