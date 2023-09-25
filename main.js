@@ -249,12 +249,30 @@
 
 
 //return key-word start==============================function============
-function MynFunction(firstN,lastN,NickN){
-  let p = `${firstN} ${lastN} and my nick name is ${NickN}`;
-  console.log(`${p} --------------- this is from function`)
-  return p;
-}
+// function MynFunction(firstN,lastN,NickN){
+//   let p = `${firstN} ${lastN} and my nick name is ${NickN}`;
+//   console.log(`${p} --------------- this is from function`)
+//   return p;
+// }
 
-let returnKey = MynFunction("Mohammod", "Ariful Islam", "Orko");
-console.log(`${returnKey} ------------ this is from return`);
+// let returnKey = MynFunction("Mohammod", "Ariful Islam", "Orko");
+// console.log(`${returnKey} ------------ this is from return`);
 //return keyword end ==============================function============
+
+// function myb(){
+//   alert("not only anonymous function work as a callback function");
+//   alert("but if you want than maybe normal function can work as callback function");
+// }
+
+// function test (abc){
+//   abc();
+// }
+// test(myb);
+
+
+//default value for parameter ============start=============
+function myFun(firstName ="you did not pass your First Name"){
+      console.log(firstName)
+}
+myFun();
+//default value for parameter ============end=============
