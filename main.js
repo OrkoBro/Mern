@@ -233,16 +233,28 @@
 // break end ========================
 
 // continue start ===========================
-for (let p1 = 1; p1 <= 3; p1++) {
+// for (let p1 = 1; p1 <= 3; p1++) {
 
-//if()
-  for (let j1 = 1; j1 <= 5; j1++) {    
-       if (j1==5){ // out off the loop only for child not for parent 
-      continue;
-    }
-    console.log(p1, j1);
+// //if()
+//   for (let j1 = 1; j1 <= 5; j1++) {    
+//        if (j1==5){ // out off the loop only for child not for parent 
+//       continue;
+//     }
+//     console.log(p1, j1);
 
 
-  }} 
+//   }} 
   // continue end ================================
-  
+
+
+
+//return key-word start==============================function============
+function MynFunction(firstN,lastN,NickN){
+  let p = `${firstN} ${lastN} and my nick name is ${NickN}`;
+  console.log(`${p} --------------- this is from function`)
+  return p;
+}
+
+let returnKey = MynFunction("Mohammod", "Ariful Islam", "Orko");
+console.log(`${returnKey} ------------ this is from return`);
+//return keyword end ==============================function============
