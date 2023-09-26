@@ -281,37 +281,87 @@
 // three ways to make define function inside an object 
 // when you creat a function inside an object then that function is called method of thet object 
 
-let person1 = {
-      firstname:"mohammod",
-      fullName:"Mohammod Ariufl Islam",
-      nickName:"orko",
-      great(){
-        alert(this.firstname +" "+ this.fullName + " "+ this.nickName);
-      }
-}
-person1.great();
+// let person1 = {
+//       firstname:"mohammod",
+//       fullName:"Mohammod Ariufl Islam",
+//       nickName:"orko",
+//       great(){
+//         alert(this.firstname +" "+ this.fullName + " "+ this.nickName);
+//       }
+// }
+// person1.great();
 
 
-let person2 ={
-  firstname:"mohammod",
-  fullName:"Mohammod Ariufl Islam",
-  nickName:"orko",
-  great2:   function(){
-        alert("this is secound method of an object");
-      }
-}
+// let person2 ={
+//   firstname:"mohammod",
+//   fullName:"Mohammod Ariufl Islam",
+//   nickName:"orko",
+//   great2:   function(){
+//         alert("this is secound method of an object");
+//       }
+// }
 
-person2.great2();
+// person2.great2();
 
 
-let person3 ={
-  firstname:"mohammod",
-  fullName:"Mohammod Ariufl Islam",
-  nickName:"orko",
-}
-person3.great3 = function(){
-    alert("this is 3rd method of an object");
-}
-person3.great3();
+// let person3 ={
+//   firstname:"mohammod",
+//   fullName:"Mohammod Ariufl Islam",
+//   nickName:"orko",
+// }
+// person3.great3 = function(){
+//     alert("this is 3rd method of an object");
+// }
+// person3.great3();
 
 //end ==============================================
+
+
+// function User(name) {
+//   this.name = name;
+//   this.isAdmin = false;
+// }
+
+//  let p = new User("ORKO BAI");
+
+// alert(p.name); // Jack
+// alert(p.isAdmin); // false
+
+
+//======================= about fucntion constructor ===========start ======================
+//======================= normal way ===========start ======================
+
+function myfunction(firstN,lastN){
+  person = {};
+  person.FirstName = firstN;
+  person.LastName = lastN;
+  return person;
+}
+
+let creatingOject = myfunction("Ariful","islam");
+console.log(creatingOject);
+
+//======================= normal way ===========end ======================
+// ===================== using function constructor ------start =============
+function Person(firstName,lastName,nickName){
+  
+  
+  this.prothomNam = firstName;
+  this.lastnam = lastName;
+  this.daknam = nickName;
+}
+
+let x = new Person("Mohammod","Ariful Islam","orko");
+console.log(x);
+// ===================== using function constructor ------start =============
+
+
+
+
+
+
+
+
+
+
+
