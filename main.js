@@ -331,37 +331,102 @@
 //======================= about fucntion constructor ===========start ======================
 //======================= normal way ===========start ======================
 
-function myfunction(firstN,lastN){
-  person = {};
-  person.FirstName = firstN;
-  person.LastName = lastN;
-  return person;
-}
+// function myfunction(firstN,lastN){
+//   person = {};
+//   person.FirstName = firstN;
+//   person.LastName = lastN;
+//   return person;
+// }
 
-let creatingOject = myfunction("Ariful","islam");
-console.log(creatingOject);
+// let creatingOject = myfunction("Ariful","islam");
+// console.log(creatingOject);
 
 //======================= normal way ===========end ======================
 // ===================== using function constructor ------start =============
-function Person(firstName,lastName,nickName){
-  
-  
-  this.prothomNam = firstName;
-  this.lastnam = lastName;
-  this.daknam = nickName;
-}
 
-let x = new Person("Mohammod","Ariful Islam","orko");
-console.log(x);
+
+//function Person(firstName,lastName,nickName){
+  
+//   this.prothomNam = firstName;
+//   this.lastnam = lastName;
+//   this.daknam = nickName;
+// }
+
+// let x = new Person("Mohammod","Ariful Islam","orko");
+// console.log(x);
 // ===================== using function constructor ------start =============
 
 
 
 
+// ================= comma opparator ==================
+// let c = (10+15 , 15 +20);
+// console.log(c);
+// ================= comma opparator ==================
+
+// ========================prototype---start================
+let X = {
+  goodwords:"you are good boy.",
+  betterwords:"you are good enough.",
+  bestwords:"you are unbeliveable man."
+}
+
+let stuend69 = {
+  name:"Md. Ariful Islam",
+  nickName:"orko",
+  __proto__: X
+}
+console.log(stuend69)
+//==============================================================
 
 
 
 
+// function Person(first, last, age, eyecolor) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eyecolor;
+// }
+
+// Person.prototype.nationality = "English";
+// let myFather = new Person("John", "Doe", 50, "blue");
+// console.log(myFather)
 
 
 
+// function Mobile (model_no){
+//   this.model= model_no;
+//   this.price = 3000;
+// };
+
+// let apple = new Mobile("Apple");
+// let nokia = new Mobile("Nokia");
+
+// apple.color="rosemarry";
+// console.log(nokia);
+
+
+// function x (){
+//   var a = 15; // you can't access this variable from function scope 
+// }
+
+
+// if(true){
+//  var a = 20 // it wll accessable 
+//  let b = 30;// you cant accesse it because it define by let 
+// }
+
+// console.log(b);
+
+//return annonimous function --------------start--------------
+function codefather(a){
+  return function (b){
+    return a+b ; 
+  };
+}
+let p = codefather(10);
+console.log(p + "   -------------------------");
+let x = p(20);
+console.log(x);
+//return annonimous function ------------end----------------
