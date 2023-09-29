@@ -441,16 +441,23 @@
 
 //===================== Factory function start ==============
 
-// function forAllMobileModel(Model,Ram,storage,Price){
-//   return {
-//           Modal:Model,
-//           RAM:Ram,
-//           Storage:storage,
-//           Price:()=> Price 
-//   }
-// }
+function forAllMobileModel(Model,Ram,storage,Price){
+  return {
+          Modal:Model,
+          RAM:Ram,
+          Storage:storage,
+          Price:()=> Price 
+  }
+}
 
-// let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
-// let w = x.Price();
-// console.log(w);
+let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
+console.log(x);
+
 //====================== Factory function end ===================
+
+// ================= to chack property is ablelable or not 
+if (forAllMobileModel.Storage !== "defined"){
+  document.write("It is Defined");
+}else{
+  document.write("It is not defined");
+}
