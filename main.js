@@ -441,23 +441,36 @@
 
 //===================== Factory function start ==============
 
-function forAllMobileModel(Model,Ram,storage,Price){
-  return {
-          Modal:Model,
-          RAM:Ram,
-          Storage:storage,
-          Price:()=> Price 
-  }
-}
+// function forAllMobileModel(Model,Ram,storage,Price){
+//   return {
+//           Modal:Model,
+//           Ram:Ram,
+//           Storage:storage,
+//           Price:()=> Price 
+//   }
+// }
 
-let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
-console.log(x);
+// let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
+// console.log(x);
 
 //====================== Factory function end ===================
 
-// ================= to chack property is ablelable or not 
-if (forAllMobileModel.Storage !== "defined"){
-  document.write("It is Defined");
-}else{
-  document.write("It is not defined");
-}
+// ================= to chack property is available or not 
+// if (forAllMobileModel.Storage !== "undefined"){
+//   document.write("It is Defined");
+// }else{                                             ------1st method
+//   document.write("It is not defined");
+// }
+
+// if('Ram' in x){
+//   document.write("Available");
+// }else{                                         ----------2nd method 
+//   document.write("Not Available");
+// }
+
+// if (x.hasOwnProperty("Ram")){
+//   document.write("This Property is Available");
+// }else{                                               -------3red method
+//   document.write("This Property is not Available");
+
+// }
