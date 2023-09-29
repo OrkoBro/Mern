@@ -420,13 +420,20 @@ console.log(stuend69)
 // console.log(b);
 
 //return annonimous function --------------start--------------
-function codefather(a){
-  return function (b){
-    return a+b ; 
-  };
-}
-let p = codefather(10);
-console.log(p + "   -------------------------");
-let x = p(20);
-console.log(x);
+// function codefather(a){
+//   return function (b){
+//     return a+b ; 
+//   };
+// }
+// let p = codefather(10);
+// console.log(p + "   -------------------------");
+// let x = p(20);
+// console.log(x);
 //return annonimous function ------------end----------------
+
+
+let hp = {};
+hp.myFunction = ()=> (10+20+30);
+// console.log (hp.myFunction());   ---- 1 
+console.log(hp["myFunction"]()) //-------2 
+// 1 and 2 dose the same work
