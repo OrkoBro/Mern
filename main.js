@@ -441,17 +441,17 @@
 
 //===================== Factory function start ==============
 
-// function forAllMobileModel(Model,Ram,storage,Price){
-//   return {
-//           Modal:Model,
-//           Ram:Ram,
-//           Storage:storage,
-//           Price:()=> Price 
-//   }
-// }
+function forAllMobileModel(Model,Ram,storage,Price){
+  return {
+          Modal:Model,
+          Ram:Ram,
+          Storage:storage,
+          Price:()=> Price 
+  }
+}
 
-// let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
-// console.log(x);
+let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
+console.log(x);
 
 //====================== Factory function end ===================
 
@@ -474,3 +474,11 @@
 //   document.write("This Property is not Available");
 
 // }
+
+
+for(let i in x){
+  if( typeof (x[i]) !== 'function'){
+    document.write(i + ": " + x[i] + "<br>");
+    console.log(x[i] + "<br>")
+  }
+}
