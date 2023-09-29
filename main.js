@@ -365,18 +365,18 @@
 // ================= comma opparator ==================
 
 // ========================prototype---start================
-let X = {
-  goodwords:"you are good boy.",
-  betterwords:"you are good enough.",
-  bestwords:"you are unbeliveable man."
-}
+// let X = {
+//   goodwords:"you are good boy.",
+//   betterwords:"you are good enough.",
+//   bestwords:"you are unbeliveable man."
+// }
 
-let stuend69 = {
-  name:"Md. Ariful Islam",
-  nickName:"orko",
-  __proto__: X
-}
-console.log(stuend69)
+// let stuend69 = {
+//   name:"Md. Ariful Islam",
+//   nickName:"orko",
+//   __proto__: X
+// }
+// console.log(stuend69)
 //==============================================================
 
 
@@ -432,8 +432,25 @@ console.log(stuend69)
 //return annonimous function ------------end----------------
 
 
-let hp = {};
-hp.myFunction = ()=> (10+20+30);
-// console.log (hp.myFunction());   ---- 1 
-console.log(hp["myFunction"]()) //-------2 
+// let hp = {};
+// hp.myFunction = ()=> (10+20+30);
+// // console.log (hp.myFunction());   ---- 1 
+// console.log(hp["myFunction"]()) //-------2 
 // 1 and 2 dose the same work
+
+
+//===================== Factory function start ==============
+
+// function forAllMobileModel(Model,Ram,storage,Price){
+//   return {
+//           Modal:Model,
+//           RAM:Ram,
+//           Storage:storage,
+//           Price:()=> Price 
+//   }
+// }
+
+// let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
+// let w = x.Price();
+// console.log(w);
+//====================== Factory function end ===================
