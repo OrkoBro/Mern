@@ -488,23 +488,85 @@
 
 //FOR -----------------in loop ===============================
 // Object.keys (mainObject name) ======== only show instance members ont prototypes members 
- let Mobile = function (model,ram, price, color){
-          this.MobileName = model;
-          this.Ram = ram;
-          this. price = price;
-          let rong = color; // same name duita variable kora jabe na. tai alada nam nite hobe.
-          this.myfucntion = ()=> rong;
-          };
+//  let Mobile = function (model,ram, price, color){
+//           this.MobileName = model;
+//           this.Ram = ram;
+//           this. price = price;
+//           let rong = color; // same name duita variable kora jabe na. tai alada nam nite hobe.
+//           this.myfucntion = ()=> rong;
+//           };
  
- let nokia = new Mobile(1999,16,30000,"red");
-//  console.log(nokia);
-//  console.log(nokia.myfucntion())
- Mobile.prototype.brandOwnerName = "Md. Ariful Islam Orko";// mobile is the main object fro this object and i watn to set this protperty to the main object's prototype
- console.log()
- for(let key in nokia){
-  document.write(key + ":" +" " + nokia[key] +"<br> ");
-  console.log(`${key} : ${nokia[key]}` )
-  // console.log(key +":" + (nokia[key]) )
- }
+//  let nokia = new Mobile(1999,16,30000,"red");
+// //  console.log(nokia);
+// //  console.log(nokia.myfucntion())
+//  Mobile.prototype.brandOwnerName = "Md. Ariful Islam Orko";// mobile is the main object fro this object and i watn to set this protperty to the main object's prototype
+//  console.log()
+//  for(let key in nokia){
+//   document.write(key + ":" +" " + nokia[key] +"<br> ");
+//   console.log(`${key} : ${nokia[key]}` )
+//   // console.log(key +":" + (nokia[key]) )
+//  }
 
  // end=====================================
+
+//  function NnyTin(){
+
+//  }
+
+//  let pe = new NnyTin();
+//  console.log(NnyTin.prototype);
+//  NnyTin.prototype.Ariful = "hello Boss";
+
+//  console.log(pe.__proto__ === NnyTin.prototype);
+//  console.log(pe.__proto__);
+
+
+
+//  let person1={
+//         name:"ariful",
+//         father:"joynal"
+//  }
+
+//  let person2={
+//     father:"rocobuddin",
+//     __proto__:person1
+//  }
+//  console.log(person2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//================= constrator and object and prototype inheritance start ================
+
+let Mobile = function (){
+  this.FirstStuednt="Ariful"
+}
+
+let nokia = new Mobile();
+console.log(nokia);
+Mobile.prototype.information = "Student";
+
+let Samsung = function(){
+  this.lastName ="Orko"; 
+  // --proto--:Mobile; // it won't work here 
+  Mobile.call(this); // inherit Mobil constuctor 
+}
+Samsung.prototype = Object.create(Mobile.prototype); // new fucntion() call korar age link korate hoy 
+// nahole khoje pay na 
+
+let person = new Samsung();
+console.log(person.FirstStuednt);
+
+
+console.log(person.information);
+
+//================= constrator and object and prototype inheritance start ================
