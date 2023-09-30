@@ -441,17 +441,17 @@
 
 //===================== Factory function start ==============
 
-function forAllMobileModel(Model,Ram,storage,Price){
-  return {
-          Modal:Model,
-          Ram:Ram,
-          Storage:storage,
-          Price:()=> Price 
-  }
-}
+// function forAllMobileModel(Model,Ram,storage,Price){
+//   return {
+//           Modal:Model,
+//           Ram:Ram,
+//           Storage:storage,
+//           Price:()=> Price 
+//   }
+// }
 
-let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
-console.log(x);
+// let x = forAllMobileModel("Nokia", "6GB","120GB","3000TK");
+// console.log(x);
 
 //====================== Factory function end ===================
 
@@ -476,9 +476,35 @@ console.log(x);
 // }
 
 
-for(let i in x){
-  if( typeof (x[i]) !== 'function'){
-    document.write(i + ": " + x[i] + "<br>");
-    console.log(x[i] + "<br>")
-  }
-}
+// for(let i in x){
+//   if( typeof (x[i]) !== 'function'){
+//     document.write(i + ": " + x[i] + "<br>");
+//     console.log(x[i] + "<br>")
+//   }
+// }
+
+// console.log(Object.keys(x));
+
+
+//FOR -----------------in loop ===============================
+// Object.keys (mainObject name) ======== only show instance members ont prototypes members 
+ let Mobile = function (model,ram, price, color){
+          this.MobileName = model;
+          this.Ram = ram;
+          this. price = price;
+          let rong = color; // same name duita variable kora jabe na. tai alada nam nite hobe.
+          this.myfucntion = ()=> rong;
+          };
+ 
+ let nokia = new Mobile(1999,16,30000,"red");
+//  console.log(nokia);
+//  console.log(nokia.myfucntion())
+ Mobile.prototype.brandOwnerName = "Md. Ariful Islam Orko";// mobile is the main object fro this object and i watn to set this protperty to the main object's prototype
+ console.log()
+ for(let key in nokia){
+  document.write(key + ":" +" " + nokia[key] +"<br> ");
+  console.log(`${key} : ${nokia[key]}` )
+  // console.log(key +":" + (nokia[key]) )
+ }
+
+ // end=====================================
