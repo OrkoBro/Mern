@@ -547,26 +547,77 @@
 
 //================= constrator and object and prototype inheritance start ================
 
-let Mobile = function (){
-  this.FirstStuednt="Ariful"
-}
+// let Mobile = function (){
+//   this.FirstStuednt="Ariful"
+// }
 
-let nokia = new Mobile();
-console.log(nokia);
-Mobile.prototype.information = "Student";
+// let nokia = new Mobile();
+// console.log(nokia);
+// Mobile.prototype.information = "Student";
 
-let Samsung = function(){
-  this.lastName ="Orko"; 
-  // --proto--:Mobile; // it won't work here 
-  Mobile.call(this); // inherit Mobil constuctor 
-}
-Samsung.prototype = Object.create(Mobile.prototype); // new fucntion() call korar age link korate hoy 
-// nahole khoje pay na 
+// let Samsung = function(){
+//   this.lastName ="Orko"; 
+//   // --proto--:Mobile; // it won't work here 
+//   Mobile.call(this); // inherit Mobil constuctor 
+// }
+// Samsung.prototype = Object.create(Mobile.prototype); // new fucntion() call korar age link korate hoy 
+// // nahole khoje pay na 
 
-let person = new Samsung();
-console.log(person.FirstStuednt);
+// let person = new Samsung();
+// console.log(person.FirstStuednt);
 
 
-console.log(person.information);
+// console.log(person.information);
 
 //================= constrator and object and prototype inheritance start ================
+
+
+// prototype inheritance 
+// let protoInheritanc = (child,parant)=> {
+//   child.prototype = Object.create(parant.prototype);
+//   child.prototype.constructor = child;
+//   }; 
+  
+// let Parent = function (){
+//   this.salary = 3000;
+// }
+// Parent.prototype.beton=function(){
+//   return this.salary;
+// }
+
+// let XP = new Parent();
+// let XXP = new Parent(); 
+
+// protoInheritanc(XP,Parent)
+// console.log(XP.beton())
+
+
+let Mobile = function (model){
+  this.Model = model;
+}
+
+                        Mobile.prototype.getModel = function (){
+                          return this.model;
+                        }
+let Samsung = function (model, Price){
+  Mobile.call(this, model);
+  this.price = Price;
+} 
+
+let galaxy = new Samsung("A950", 30000);
+console.log(galaxy.Model)
+
+
+
+let A = function (M){
+  this.Protisthan = M;
+}
+
+let B = function (Price, M){
+  this.dam = Price;
+  A.call(this, M);
+}
+
+
+let callB = new B(18000,"bangladesh" );
+console.log(callB.Protisthan)
