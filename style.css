@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+}
+.forGrid{
+    height:100vh;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    background: #ebc3c3;
+}
+.container{
+    background:rgba(255, 255, 255, 0.374);
+    width:500px;
+    border-radius: 20px;
+    padding:30px;
+    
+}
+.container [type="text"]{
+    padding:10px 20px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+}
+.name{width:300px;}
+.famillyName{width:250px;}
+
+.container [type="password"]{
+    width:280px;
+    padding:10px 20px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.container [type="email"]{
+    padding:10px 20px;
+    width:300px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+.container [type="date"]{
+    padding:6px 10px 6px 60px;
+    width:250px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 18px;
+    box-sizing:border-box;
+}
+.container form>.btn{
+   width:180px;
+   padding:10px 20px;
+   box-sizing: border-box;
+   outline: none;
+   border:none;
+   border-radius: 15px;
+   cursor:pointer;
+}
+
+::-webkit-file-upload-button{
+    width: 100px;
+    padding:10px;
+    border:none;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.container [type="file"]{
+  
+    background: rgba(255, 0, 0, 0.081);
+    border-radius: 15px;
+}
+

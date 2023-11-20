@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learing is boring cause it won't give you monney</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infromation Taking from user</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="forGrid">
+      <div class="container">
+        <form action="#">
+          <!-- full name and familly name  and date stat----------------- -->
+          <label for="first_name" >Name</label>
+          <input type="text" class ="name" required><br/><br/>
+
+          <label for="lastName">Familly Name</label>
+          <input type="text" class ="famillyName" required><br/><br/>
+
+          <label for="date">Select your birthday</label>
+          <input type="date" class ="email"required><br><br>
+          <!-- full name and familly name and date end ------------------ -->
+        
+          <!-- email start---------------------------------- -->
+          <label for="email">E-mail</label>
+          <input type="email" required><br><br>
+          <!-- email end ------------------------------ -->
 
 
-    <script src="main.js"></script>
+          <!-- password fild start---------------------- -->
+            <label for="password">Password</label>
+            <input type="password" name="" id=""><br><br>
+
+          <!-- password fild end---------------------- -->
+
+
+
+          <!-- radio button start ---------------------------------- -->
+          <input type="radio" name="status">
+          <label for="student">student</label>
+          <input type="radio" name="status">
+          <label for="jobSecar">job person</label><br><br>
+          <!-- radio button end ----------------------------------- -->
+
+
+
+          <h2>skills</h2>
+          <hr>
+          <input type="checkbox" name="" id="">
+          <label for="chackbox">HTML5</label><br>
+          <input type="checkbox" name="" id="">
+          <label for="chackbox">CSS3</label><br>
+          <input type="checkbox" name="" id="">
+          <label for="chackbox">JavaScript</label><br>       
+          <input type="checkbox" name="" id="">
+          <label for="chackbox">NODE.js</label><br>
+          <input type="checkbox" name="" id="">
+          <label for="chackbox">EXPRESS.JS</label>
+          <hr><br>
+          <h2>import your CV</h2><br>
+          <input type="file" name="" id="" required><br><br>
+
+
+          <button class ="btn">submit</button>
+
+
+        </form>
+      </div> 
+  </div> 
 </body>
 </html>
